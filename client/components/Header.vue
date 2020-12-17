@@ -41,11 +41,12 @@
             text-decoration: none;
             color: black;
             padding: 5px 20px;
-            transition: 0.5s ease;
+            transition: 0.3s ease;
             border: 1px solid black
     }
         
     nav *:hover {
-            background-color: white;
+            color: white;
+            background-color: black;
     }
 </style>
