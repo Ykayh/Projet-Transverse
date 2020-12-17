@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <img src="./ressources/Logo.png">
+        <img src="./assets/Logo.png">
         <h1>L'algorithmique en un clique</h1>
         <nav>
             <router-link to='/contact'>Contact</router-link>
@@ -14,6 +14,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Poppins', sans-serif;
+        background-color: white;
     }
     .header {
         position: sticky;
@@ -45,7 +46,6 @@
     }
         
     nav *:hover {
-            background-color: rgb(156, 156, 156);
-            color: white;
+            background-color: white;
     }
 </style>
