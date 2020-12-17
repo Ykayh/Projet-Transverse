@@ -1,9 +1,13 @@
 <template>
   <div class="algos">
-    <div class="algo" v-for="algo in algos" :key="algo">
-        <h4>{{algo.name}}</h4>
-        <p>{{algo.desciption}}</p>
-        <a>Rating: {{algo.rating}}, Comments: {{algo.comments}}</a>
+    <div class="container" v-for="algo in algos" :key="algo">
+        <router-link :to="{ path: '/algo', query: { name: algo.url_name }}">
+            <div class="algo">
+                <h4>{{algo.name}}</h4>
+                <p>{{algo.desciption}}</p>
+                <a>Rating: {{algo.rating}}, Comments: {{algo.comments}}</a>
+            </div>
+        </router-link>
     </div>
   </div>
 </template>
@@ -13,7 +17,7 @@ module.exports = {
   data () {
     return {
       algos: {
-          algo1: {name: "Algo 1", desciption: "Description rapide de l'algo1", rating: 3, comments: 10},
+          algo1: {name: "Algo 1", desciption: "Description rapide de l'algo1", url_name: 'algo-1' ,rating: 3, comments: 10},
           algo2: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
           algo3: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
           algo4: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
@@ -55,5 +59,10 @@ module.exports = {
     transition: 0.3s ease;
     background-color: wheat;
     cursor: pointer;
+}
+
+.container * {
+    text-decoration: none;
+    color: black;
 }
 </style>
