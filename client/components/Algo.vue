@@ -16,19 +16,19 @@
 module.exports = {
   data () {
     return {
-      algos: {
-          algo1: {name: "Algo 1", desciption: "Description rapide de l'algo1", url_name: 'algo-1' ,rating: 3, comments: 10},
-          algo2: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo3: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo4: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo5: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo6: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo7: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo8: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo9: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo10: {name: "Algo 2", desciption: "Description rapide de l'algo2"},
-          algo11: {name: "Algo 2", desciption: "Description rapide de l'algo2"}
-      }
+      algos: [
+          {name: "Algo 1", desciption: "Description rapide de l'algo1", url_name: 'algo-1' ,rating: 3, comments: 10},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"},
+          {name: "Algo 2", desciption: "Description rapide de l'algo2"}
+      ]
     }
   }
 }
